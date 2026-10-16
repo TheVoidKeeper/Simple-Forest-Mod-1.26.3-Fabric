@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "thevoidkeeper.simpletrees.mixin",
+	"package": "thevoidkeeper.simpleforest.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
 		"ExampleMixin"

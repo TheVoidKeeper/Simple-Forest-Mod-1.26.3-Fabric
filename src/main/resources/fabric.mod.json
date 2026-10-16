@@ -1,34 +1,28 @@
 {
-	"schemaVersion": 1,
-	"id": "simple-trees",
-	"version": "${version}",
-	"name": "Simple Trees",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/simple-trees/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"thevoidkeeper.simpletrees.SimpleTrees"
-		],
-		"fabric-datagen": [
-			"thevoidkeeper.simpletrees.SimpleTreesDataGenerator"
-		]
-	},
-	"mixins": [
-		"simple-trees.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~26.3",
-		"java": ">=25",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "simple-forest",
+  "version": "${version}",
+  "name": "Simple Forest",
+  "description": "Biome-specific natural tree generation (Phase 1 worldgen scaffold).",
+  "authors": [
+    "TheVoidKeeper"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "thevoidkeeper.simpleforest.SimpleForest"
+    ],
+    "fabric-datagen": [
+      "thevoidkeeper.simpleforest.SimpleForestDataGenerator"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
 }
