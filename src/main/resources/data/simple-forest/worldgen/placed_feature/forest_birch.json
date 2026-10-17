@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:birch",
+  "feature": "simple-forest:forest_birch",
   "placement": [
     {
       "type": "minecraft:count",

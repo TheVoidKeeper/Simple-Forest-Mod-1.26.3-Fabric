@@ -1,4 +1,4 @@
-package thevoidkeeper.simpleforest.tree;
+package thevoidkeeper.simpleforest.tree.species.oak.variants;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
@@ -9,6 +9,9 @@ import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.feature.Feature;
+
+import thevoidkeeper.simpleforest.tree.common.TreePlacementValidator;
+import thevoidkeeper.simpleforest.tree.common.TreeSpacingValidator;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +28,8 @@ public final class OakTreeFeature implements Feature {
     @Override
     public boolean place(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin) {
         int height = 8 + random.nextInt(8);
-        if (!TreePlacementValidator.canGrow(level, origin, height)) return false;
+        if (!TreePlacementValidator.canGrow(level, origin, height)
+                || !TreeSpacingValidator.clearOfTrunks(level, origin, 5)) return false;
 
         Map<BlockPos, BlockState> planned = new HashMap<>();
         BlockState wood = Blocks.OAK_LOG.defaultBlockState();

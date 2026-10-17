@@ -38,5 +38,9 @@ public final class BiomeTreeRegistry {
                 BiomeSelectors.includeByKey(Biomes.FOREST),
                 GenerationStep.Decoration.VEGETAL_DECORATION,
                 TreeFeatureKeys.FOREST_BIRCH);
+        BiomeModifications.addFeature(
+                BiomeSelectors.includeByKey(Biomes.FOREST),
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                TreeFeatureKeys.FOREST_LARGE_OAK);
     }
 }

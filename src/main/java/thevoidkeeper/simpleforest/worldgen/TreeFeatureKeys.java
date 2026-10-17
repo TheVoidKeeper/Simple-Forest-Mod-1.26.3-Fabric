@@ -9,6 +9,7 @@ public final class TreeFeatureKeys {
     private TreeFeatureKeys() { }
 
     public static final ResourceKey<PlacedFeature> FOREST_OAK = key("forest_oak");
+    public static final ResourceKey<PlacedFeature> FOREST_LARGE_OAK = key("forest_large_oak");
     public static final ResourceKey<PlacedFeature> FOREST_BIRCH = key("forest_birch");
 
     private static ResourceKey<PlacedFeature> key(String name) {
